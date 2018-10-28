@@ -1,3 +1,11 @@
+
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register('/sw.js').then(response => {
+    console.log('service worker registered');
+  })
+}
+
+
 /**
  * Common database helper functions.
  */
