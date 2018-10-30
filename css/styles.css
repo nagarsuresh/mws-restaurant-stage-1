@@ -173,7 +173,8 @@ nav h1 a {
   min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2,
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -220,13 +221,15 @@ header {
 }
 
 #restaurant-container {
-  width: 45%;
+  width: 100%;
   padding: 2rem 1rem;
+  order: 1;
 }
 
 .inside #map-container {
-  width: 45%;
+  width: 100%;
   min-height: 400px;
+  order: 0;
 }
 
 .inside #map {
@@ -345,15 +348,6 @@ body.inside {
   #restaurants-list li {
     width: 90%;
   }
-  #restaurant-container {
-    width: 100%;
-    order: 1;
-  }
-  .inside #map-container {
-    width: 100%;
-    order: 0;
-  }
-
 }
 
 @media screen and (min-width: 780px) {
