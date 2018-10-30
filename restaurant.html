@@ -10,13 +10,16 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin="" />
-    <base href="./">
+  <!-- <base href="./"> -->
   <title>Restaurant Info</title>
 </head>
 
 <body class="inside">
   <!-- Beginning header -->
   <header>
+    <!-- skip links -->
+    <a href="#restaurant-container" class="skip-link">Skip to main content</a>
+
     <!-- Beginning nav -->
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
@@ -36,20 +39,20 @@
   <main id="maincontent">
     <!-- top row containing restaurant and map -->
     <div class="map-restaurant-container">
-      <!-- Beginning restaurant -->
-      <section id="restaurant-container">
-        <h2 id="restaurant-name"></h2>
-        <img id="restaurant-img">
-        <p id="restaurant-cuisine"></p>
-        <p id="restaurant-address"></p>
-        <table id="restaurant-hours"></table>
-      </section>
-      <!-- end restaurant -->
       <!-- Beginning map -->
       <section id="map-container">
         <div id="map" role="application"></div>
       </section>
-      <!-- End map -->
+      <!-- Beginning restaurant -->
+      <section id="restaurant-container" tabindex="-1">
+          <h2 id="restaurant-name"></h2>
+          <img id="restaurant-img">
+          <p id="restaurant-cuisine"></p>
+          <p id="restaurant-address"></p>
+          <table id="restaurant-hours"></table>
+      </section>
+        <!-- end restaurant -->
+        <!-- End map -->
     </div>
 
     <!-- Beginning reviews -->

@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin="" />
-    <base href="./">
+  <base href="./">
   <title>Restaurant Reviews</title>
 </head>
 
 <body>
   <header>
+    <!-- skip links -->
+    <a href="#cardssection" class="skip-link">Skip to main content</a>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
@@ -23,7 +25,7 @@
     <section id="map-container">
       <div id="map" role="application"></div>
     </section>
-    <section id="cardssection">
+    <section id="cardssection" tabindex="-1">
       <div class="filter-options" aria-label="Filter Results">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="Neighborhoods">
